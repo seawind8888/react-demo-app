@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
-// import { observer } from 'mobx-react';
-// import { observable } from "mobx";
-import { inject, observer } from 'mobx-react';
-
-@inject('testStore')
+import { observable } from "mobx";
+import { observer } from 'mobx-react';
+// import PageStore from '../stores/PageStore';
+// @inject(PageStore)
 @observer
 
 class Page2 extends Component {
-  handleAdd() {
-    this.props.testStore.testAction()
+  @observable title = 1
+  handleAdd = () => {
+    this.title++
   }
   render() {
     return (
       <div>
         page2
-        {this.props.testStore.page}
-        <input type='button' onClick={this.handleAdd}>点击</input>
+        {this.title}
+        <input type='button' onClick={this.handleAdd} value="点击"/>
       </div>
     )
   }
