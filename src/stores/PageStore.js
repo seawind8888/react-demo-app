@@ -4,6 +4,18 @@ export class PageStore {
   @action testAction(){
     this.page++
   }
+
+  @action
+  actionTest = () => {
+    this.fetchTest().then(() => {
+      console.log(111)
+    })
+  }
+
+  @action
+  fetchTest = () => {
+    return Promise.resolve()
+  }
 }
 
 export default new PageStore();
