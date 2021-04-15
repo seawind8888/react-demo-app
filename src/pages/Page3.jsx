@@ -1,49 +1,48 @@
-// import React, { Component } from 'react';
-// import { Button, Datepicker } from 'cloud-react';
+import React from "react";
 
-// class Page3 extends Component {
-//   state = {
-//     time: new Date()
-//   }
-//   handleChange = (value) => {
-//     this.setState({
-//       time: value
-//     });
-//   };
-//   handleClear = () => {
-//     this.setState({
-//       time: ''
-//     })
-//   }
+import { Rnd } from "react-rnd";
 
-//   render() {
-//     return (
-//       <>
-//       <Button onClick={this.handleClear}>清空</Button>
-//       <Datepicker
-//         showToday={true}
-//         value={this.state.time}
-//         showTimePicker={true}
-//         minDate={new Date('2020/02/10 10:00:00')}
-//         onChange={this.onInpChange}
-//         placeholder='年月日'
-//       />
-//     </>
-//     )
-  
-//   }
-// }
-
-// export default Page3;
-
-import React, { useState } from 'react';
-import { Datepicker } from 'cloud-react';
-
-export default function Page3() {
-    
-    const onChange = (e) => {
-        console.log(e)
+const style = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  border: "solid 1px #ddd",
+  background: "#f0f0f0",
+};
+class Page3 extends React.Component {
+  state = {
+    x: 0,
+    y: 0
+  }
+  onDragStop = (e, d) => {
+    let x = d.x
+    let y = d.y
+    console.log(x, y)
+    if(x > 112) { 
+      x = 112
     }
-
-    return <Datepicker.TimePicker onChange={onChange} />
+   
+    this.setState({ x, y })
+  }
+  render() {
+    return (
+      <div style={{ width: "240px", height: "426px", backgroundColor: "red" }}>
+        <Rnd
+          style={style}
+          position={{ x: this.state.x, y: this.state.y }}
+          onDragStop={this.onDragStop}
+          default={{
+            x: 0,
+            y: 0,
+            width: 128,
+            height: 128,
+          }}
+        >
+          Rnd
+        </Rnd>
+      </div>
+    );
+  }
 }
+
+export default Page3;

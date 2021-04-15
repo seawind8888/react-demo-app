@@ -1,0 +1,72 @@
+@import "./_variables.less";
+.inline-button {
+	width: 180px;
+	height: 52px;
+	min-height: 52px;
+	line-height: 52px;
+	border: 2px solid @color-primary;
+	border-radius: 25px;
+	font-size: 24px;
+	color: @color-primary;
+
+}
+
+// .component-gap {
+
+// 	> * {
+// 		margin-bottom: @gap;
+// 	}
+// }
+
+.clearfix {
+
+	&::before,
+	&::after {
+		content: ' ';
+		display: table;
+	}
+
+	&::after {
+		clear: both;
+	}
+}
+
+.table {
+	display: table;
+	table-layout: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.justify-layout {
+	.table();
+
+	> .tabItem {
+		.table-cell();
+	}
+}
+
+.absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sample-hint {
+
+	font-size: 30px;
+
+	:only-child {
+		.absolute-center();
+		width: 100%;
+	}
+}

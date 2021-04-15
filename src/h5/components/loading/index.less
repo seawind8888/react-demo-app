@@ -1,0 +1,93 @@
+@import '../../assets/styles/_variables.less';
+
+@loading-size: 6PX;
+@loading-gap: 0.18s;
+.co-loading {
+  &_noCenter {
+    height: @control-base-size;
+    position: relative;
+    top: 28px;
+  }
+  
+  &_isCenter {
+    height: @control-base-size;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_loading_dot {
+    background: @color-text;
+    border-radius: @loading-size;
+    height: @loading-size;
+    position: absolute;
+    left: 50%;
+    top: (@control-base-size / 2);
+    width: @loading-size;
+  
+    animation: ball-spin-fade-loader (@loading-gap * 8) (@loading-gap * 0) infinite linear;
+  
+    &:nth-child(1) {
+      margin-left: (-@loading-size / 2);
+      margin-top: (-@loading-size / 2 - @loading-size * 1.6);
+    }
+  
+    &:nth-child(2) {
+      margin-left: (-@loading-size / 2 + @loading-size * 1.152);
+      margin-top: (-@loading-size / 2 - @loading-size * 1.152);
+      animation-delay: (@loading-gap * 1);
+    }
+  
+    &:nth-child(3) {
+      margin-left: (-@loading-size / 2 + @loading-size * 1.6);
+      margin-top: (-@loading-size / 2);
+      animation-delay: (@loading-gap * 2);
+    }
+  
+    &:nth-child(4) {
+      margin-left: (-@loading-size / 2 + @loading-size * 1.152);
+      margin-top: (-@loading-size / 2 + @loading-size * 1.152);
+      animation-delay: (@loading-gap * 3);
+    }
+  
+    &:nth-child(5) {
+      margin-left: (-@loading-size / 2);
+      margin-top: (-@loading-size / 2 + @loading-size * 1.6);
+      animation-delay: (@loading-gap * 4);
+    }
+  
+    &:nth-child(6) {
+      margin-left: (-@loading-size / 2 - @loading-size * 1.152);
+      margin-top: (-@loading-size / 2 + @loading-size * 1.152);
+      animation-delay: (@loading-gap * 5);
+    }
+  
+    &:nth-child(7) {
+      margin-left: (-@loading-size / 2 - @loading-size * 1.6);
+      margin-top: (-@loading-size / 2);
+      animation-delay: (@loading-gap * 6);
+    }
+  
+    &:nth-child(8) {
+      margin-left: (-@loading-size / 2 - @loading-size * 1.152);
+      margin-top: (-@loading-size / 2 - @loading-size * 1.152);
+      animation-delay: (@loading-gap * 7);
+    }
+  }
+
+}
+
+
+@keyframes ball-spin-fade-loader {
+  50% {
+    border-radius: @loading-size;
+    opacity: 0.2;
+    transform: scale(0.4);
+  }
+
+  100% {
+    border-radius: @loading-size;
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../assets/styles/_variables.less';
+
+@confirm-color: #3DA5DC;
+
+
+.co-dialog {
+	position: fixed;
+	left: 50%;
+	top: 48%;
+	z-index: @z-pop;
+	transform: translate(-50%, -50%);
+	backface-visibility: hidden;
+
+	background: @color-bg;
+	border-radius: @border-radius;
+	width: 70%;
+
+	&__header {
+		color: @color-text;
+		padding: 40px 40px 0 40px;
+		text-align: center;
+	}
+
+	&__content {
+		color: @color-text-light;
+		padding: 40px;
+	}
+
+	&__footer {
+		border-top: @border-width solid @color-border;
+	}
+}

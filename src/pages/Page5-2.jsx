@@ -1,11 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useDrag } from 'react-dnd'
 
-export default class Page52 extends Component {
-  render() {
-    return (
-      <div>
-        page52
-      </div>
-    )
-  }
+/**
+ * Your Component
+ */
+export default function Card({ isDragging, text }) {
+  const [{ opacity }, dragRef] = useDrag({
+    item: { type: '', text },
+    collect: (monitor) => ({
+      opacity: monitor.isDragging() ? 0.5 : 1
+    })
+  })
+  return (
+    <div ref={dragRef} style={{ opacity }}>
+      {text}
+    </div>
+  )
 }

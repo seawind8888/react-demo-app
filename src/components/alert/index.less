@@ -1,0 +1,143 @@
+@import "../../assets/styles/_vblock.less";
+
+//@screnn-width: 667;
+
+@screnn-width: 375;
+@top-level: 9999;
+@time: 300ms;
+@box-width: 270;
+@box-height: 152;
+@easing-time-fun: cubic-bezier(
+  0.68,
+  -0.55,
+  0.265,
+  1.55
+); // cubic-bezier(0.165, 0.84, 0.44, 1);
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popup-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.co-alert {
+  &_wrapper {
+    position: fixed;
+    z-index: -@top-level;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &_popup {
+    z-index: @top-level;
+    opacity: 1;
+  }
+  &_prompt_wrapper {
+    .VGroup;
+    align-items: center;
+    justify-content: center;
+    // animation: popup @time @easing-time-fun 0ms 1 forwards;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 1;
+
+    background: rgba(39, 39, 39, 0.6);
+    border-collapse: collapse;
+
+   
+
+  }
+  &_no_mask {
+    background: rgba(0, 0, 0, 0);
+  }
+
+	&_prompt_box {
+		.VGroup;
+		// animation: popup-scale @time @easing-time-fun 0ms 1 forwards;
+
+		// transform: scale(1);
+
+		color: #030303;
+		font-size: 34px;
+		font-family: PingFangSC-Regular;
+		letter-spacing: -0.82px;
+
+		border-radius: 12PX;
+		// background: #EBE8E6;
+		background: #f0edeb;
+
+		// min-width: percentage(round(@box-width / @screnn-width, 4));
+		// min-height: percentage(round(@box-height / @screnn-width, 4));
+		min-width: ((@box-width / @screnn-width) * 100vw);
+		max-width: ((@box-width / @screnn-width) * 100vw);
+		min-height: ((@box-height / @screnn-width) * 100vw);
+		height: auto;
+		max-height: auto;
+	}
+
+  @border-color: #cfc2b5;
+  &_prompt_content {
+    .VGroup;
+    font-size: 17PX;
+    padding: 32PX 25PX;
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  &_prompt_ctrl {
+    .VGroup;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    @border: 1PX solid @border-color;
+    @default-color: #fe5000;
+    font-size: 17PX;
+    &.def {
+      color: @default-color;
+    }
+
+    &.first {
+      border-right: @border;
+    }
+
+    &.middle {
+      border-right: @border;
+    }
+
+    &.last {
+      color: @default-color;
+    }
+  }
+
+  &_prompt_controls {
+    .HGroup;
+    width: 100%;
+    border-top: 1PX solid @border-color;
+    height: 43PX;
+    align-items: center;
+    justify-content: center;
+  }
+}

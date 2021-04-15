@@ -1,0 +1,754 @@
+.mod {
+    width: 375px;
+    height: 667px;
+  }
+  .box {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #ff643d;
+    width: 375px;
+    height: 667px;
+  }
+  .block {
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: flex-end;
+    align-self: center;
+    flex-direction: row;
+    background-color: rgba(216, 216, 216, 0);
+    overflow: hidden;
+  }
+  .group {
+    display: flex;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .entryPic {
+    position: relative;
+    width: 314px;
+    height: 204px;
+  }
+  .icon {
+    position: absolute;
+    top: 37px;
+    right: 26px;
+    width: 6px;
+    height: 6px;
+  }
+  .icon_1 {
+    position: absolute;
+    top: 37px;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+  }
+  .icon_2 {
+    position: absolute;
+    top: 37px;
+    right: 19px;
+    width: 6px;
+    height: 6px;
+  }
+  .mark {
+    position: absolute;
+    top: -2px;
+    right: 9px;
+    width: 57px;
+    height: 25px;
+  }
+  .block_1 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .entryPic_1 {
+    position: relative;
+    width: 192px;
+    height: 131px;
+  }
+  .icon_3 {
+    position: absolute;
+    top: 34px;
+    left: 13px;
+    width: 10px;
+    height: 16px;
+  }
+  .txt {
+    position: absolute;
+    top: 31px;
+    right: 169px;
+    line-height: 22px;
+    white-space: nowrap;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .group_1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 228px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 375px;
+    height: 22px;
+  }
+  .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-right: 64px;
+    margin-left: 7px;
+  }
+  .icon_4 {
+    margin-top: 4px;
+    margin-right: 3px;
+    width: 34px;
+    height: 5px;
+  }
+  .shuyun {
+    margin-right: 7px;
+    max-width: 71px;
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 22px;
+    letter-spacing: 0.2000000029802322px;
+    white-space: nowrap;
+    color: #000000;
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .icon_5 {
+    margin-top: 2px;
+    width: 13px;
+    height: 9px;
+  }
+  .text {
+    margin-top: 1px;
+    margin-right: 104px;
+    max-width: 141px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 11px;
+    letter-spacing: 0.1000000014901161px;
+    white-space: nowrap;
+    color: #000000;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .block_2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+  .percent {
+    margin-right: 4px;
+    max-width: 53px;
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 22px;
+    white-space: nowrap;
+    color: #000000;
+    font-family: HelveticaNeue;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .icon_6 {
+    margin-top: 2px;
+    width: 25px;
+    height: 9px;
+  }
+  .main {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 74px;
+    width: 355px;
+    height: 346px;
+  }
+  .layer {
+    position: absolute;
+    top: 0;
+    align-self: center;
+    width: 355px;
+    height: 346px;
+  }
+  .block_3 {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-left: 14px;
+  }
+  .group_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 12px;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    overflow: hidden;
+  }
+  .pic {
+    width: 110px;
+    height: 110px;
+  }
+  .container_1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desc {
+    position: relative;
+    line-height: 19px;
+    white-space: nowrap;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .text_1 {
+    position: relative;
+    margin-top: 2px;
+    max-width: 186px;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 19px;
+    white-space: nowrap;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .priceWrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 17px;
+    height: 19px;
+  }
+  .rmb {
+    margin-top: 3px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ff3333;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .price {
+    margin-top: -3px;
+    line-height: 18px;
+    white-space: nowrap;
+    color: #ff3333;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .block_4 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 26px;
+    margin-left: 1px;
+  }
+  .text_2 {
+    margin-top: -2px;
+    margin-right: 4px;
+    line-height: 11px;
+    white-space: nowrap;
+    color: #666666;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 5px;
+    border-radius: 1px;
+    background-color: #ff6600;
+    width: 19px;
+    height: 18px;
+  }
+  .num {
+    margin-top: -4px;
+    margin-left: 2px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .word {
+    margin-top: -2px;
+    margin-right: 4px;
+    line-height: 11px;
+    white-space: nowrap;
+    color: #666666;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .wrap_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 5px;
+    border-radius: 1px;
+    background-color: #ff6600;
+    width: 19px;
+    height: 18px;
+  }
+  .num_1 {
+    margin-top: -4px;
+    margin-left: 2px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .txt_1 {
+    margin-top: -2px;
+    margin-right: 4px;
+    line-height: 11px;
+    white-space: nowrap;
+    color: #666666;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .wrap_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 5px;
+    border-radius: 1px;
+    background-color: #ff6600;
+    width: 19px;
+    height: 18px;
+  }
+  .num_2 {
+    margin-top: -4px;
+    margin-left: 3px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .text_3 {
+    margin-top: -2px;
+    margin-right: 4px;
+    line-height: 11px;
+    white-space: nowrap;
+    color: #666666;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .wrap_3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 5px;
+    border-radius: 1px;
+    background-color: #ff6600;
+    width: 19px;
+    height: 18px;
+  }
+  .num_3 {
+    margin-top: -4px;
+    margin-left: 2px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .word_1 {
+    margin-top: -2px;
+    line-height: 11px;
+    white-space: nowrap;
+    color: #666666;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .grid {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: flex-end;
+    flex-direction: row;
+    margin-top: 51px;
+    margin-right: 11px;
+  }
+  .col {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 47px;
+    width: 48px;
+    height: 23px;
+  }
+  .priceIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 23px;
+  }
+  .rmb_1 {
+    position: relative;
+    margin-top: -3px;
+    margin-left: 11px;
+    line-height: 10px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .money {
+    position: relative;
+    margin-top: -5px;
+    line-height: 13px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .col_1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 47px;
+    width: 48px;
+    height: 23px;
+  }
+  .priceIcon_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 23px;
+  }
+  .rmb_2 {
+    position: relative;
+    margin-top: -3px;
+    margin-left: 11px;
+    line-height: 10px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .money_1 {
+    position: relative;
+    margin-top: -5px;
+    line-height: 13px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .col_2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    width: 48px;
+    height: 23px;
+  }
+  .priceIcon_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 23px;
+  }
+  .rmb_3 {
+    position: relative;
+    margin-top: -3px;
+    margin-left: 9px;
+    line-height: 10px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .money_2 {
+    position: relative;
+    margin-top: -5px;
+    line-height: 13px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .block_5 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #ffedd1;
+    width: 295px;
+  }
+  .block_6 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 88px;
+    border-radius: 5px;
+    background-image: linear-gradient(
+      -90deg,
+      #ff4400 0%,
+      #ffc400 99.95356206293707%
+    );
+    width: 10px;
+    height: 8px;
+    overflow: hidden;
+  }
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
+  .dot_1 {
+    margin-right: 91px;
+    width: 4px;
+    height: 4px;
+  }
+  .dot_2 {
+    margin-right: 91px;
+    width: 4px;
+    height: 4px;
+  }
+  .dot_3 {
+    width: 4px;
+    height: 4px;
+  }
+  .group_3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    margin-top: 8px;
+  }
+  .text_4 {
+    margin-right: 67px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ff8849;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .txt_2 {
+    margin-right: 64px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ff8849;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .word_2 {
+    margin-right: 62px;
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ff8849;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .text_5 {
+    line-height: 12px;
+    white-space: nowrap;
+    color: #ff8849;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .color {
+    position: relative;
+    align-self: center;
+    margin-top: 36px;
+    border-radius: 24px;
+    background-color: #ff5e00;
+    width: 269px;
+    height: 44px;
+  }
+  .block_7 {
+    display: flex;
+    position: absolute;
+    bottom: 34px;
+    align-items: flex-start;
+    align-self: center;
+    flex-direction: row;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 23px;
+    border-color: rgba(255, 255, 255, 1);
+    background-image: linear-gradient(0deg, #ffd500 0%, #ff6e00 100%);
+    width: 271px;
+    height: 44px;
+  }
+  .group_4 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 52px;
+    margin-left: 13px;
+  }
+  .dot_4 {
+    margin-right: 2px;
+    width: 4px;
+    height: 4px;
+  }
+  .empty {
+    border-radius: 4px;
+    background-image: linear-gradient(-90deg, #ffc600 0%, #ffffff 100%);
+    width: 28px;
+    height: 4px;
+  }
+  .txt_3 {
+    margin-top: 10px;
+    margin-right: 58px;
+    max-width: 123px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 22px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .icon_7 {
+    margin-top: 4px;
+    width: 36px;
+    height: 36px;
+  }
+  .icon-pinWrap {
+    display: flex;
+    position: absolute;
+    right: 26px;
+    bottom: 16px;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    width: 45px;
+    height: 44px;
+  }
+  .icon-pin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 44px;
+    overflow: hidden;
+  }
+  .icon_8 {
+    position: relative;
+    margin-top: 21px;
+    width: 25px;
+    height: 17px;
+  }
+  .logo {
+    position: relative;
+    align-self: center;
+    margin-top: 20px;
+    width: 81px;
+    height: 22px;
+  }
+  .word_3 {
+    position: relative;
+    margin-top: 14px;
+    margin-left: 10px;
+    max-width: 365px;
+    height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    white-space: pre;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .summary {
+    position: relative;
+    margin-left: 10px;
+    max-width: 365px;
+    height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .info {
+    position: relative;
+    margin-top: 2px;
+    margin-left: 10px;
+    max-width: 365px;
+    height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .organizationPrev {
+    position: relative;
+    margin-left: 10px;
+    max-width: 365px;
+    height: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .organization {
+    position: relative;
+    margin-top: 2px;
+    margin-left: 10px;
+    max-width: 365px;
+    height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
