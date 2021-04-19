@@ -7,7 +7,6 @@ const Page1 = () => {
   const [visible, setVisible] = useState(false)
   return (
     <div style={{ height: "100vh" }}>
-      123
       <Button type="primary">123</Button>
       <CoAlert
           visible={visible}
