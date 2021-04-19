@@ -3,6 +3,7 @@ import { Button } from '@tarojs/components/dist-h5/react';
 import { CoAlert } from "../h5";
 
 const Page1 = () => {
+  
   const [visible, setVisible] = useState(false)
   return (
     <div style={{ height: "100vh" }}>
