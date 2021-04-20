@@ -12,8 +12,7 @@ const style = {
 class Page3 extends React.Component {
   state = {
     x: 0,
-    y: 0,
-    z: 0
+    y: 0
   }
   onDragStop = (e, d) => {
     let x = d.x
