@@ -21,7 +21,8 @@ class Page2 extends Component {
     a: {
       b: 'b',
       c: '2',
-      d: '3'
+      d: '3',
+      e: '4'
     }
   }
 
