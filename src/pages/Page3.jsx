@@ -14,7 +14,8 @@ class Page3 extends React.Component {
     x: 0,
     y: 0,
     z: 0,
-    aa: 123
+    aa: 123,
+    bb:321
   }
   onDragStop = (e, d) => {
     let x = d.x
