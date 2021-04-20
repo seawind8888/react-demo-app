@@ -20,6 +20,7 @@ class Page2 extends Component {
   @observable.shallow obj = {
     a: {
       b: 'b'
+      c: '2'
     }
   }
 
