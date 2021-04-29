@@ -3,7 +3,6 @@ import { Button } from '@tarojs/components/dist-h5/react';
 import { CoAlert } from "../h5";
 
 const Page1 = () => {
-  
   const [visible, setVisible] = useState(false)
   return (
     <div style={{ height: "100vh" }}>
@@ -12,7 +11,7 @@ const Page1 = () => {
           visible={visible}
           controls={[
             {
-              title: "取消",
+              title: "取消1",
               onClick: () => {
                 setVisible(false)
               }
