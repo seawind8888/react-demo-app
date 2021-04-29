@@ -11,7 +11,7 @@ const Page1 = () => {
           visible={visible}
           controls={[
             {
-              title: "取消",
+              title: "取消1",
               onClick: () => {
                 setVisible(false)
               }
