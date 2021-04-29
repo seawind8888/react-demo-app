@@ -9,6 +9,7 @@ class Page4 extends Component {
   state = {
     time: moment('2015/01/01')
   }
+  
   onChange = (date, dateString) => {
     console.log(dateString);
   }
